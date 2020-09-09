@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <meta name="description" content="college portfolio website">
+    <meta name="keywords" content="college website,portfolio website">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <style type="text/css">
+    body {
+        background-color: #fafafa;
+        background-image: url("images/suit_businessman.jpeg");
+        background-size: cover;
+        opacity: 0.45;
+        background-repeat: no-repeat;
+        background-origin: content-box, padding-box;
+        margin: 0;
+    }
+
+    .div1text {
+        color: #fffed8;
+        /*Creamy color*/
+        font-size: 50px;
+        text-align: center;
+        opacity: 0.6;
+    }
+
+    /*====================================FOR WELCOME MESSAGE==========================================================================*/
+    #greetings {
+        text-align: center;
+        color: rgb(80, 130, 180);
+        margin-top: 18%;
+        font-size: 5vw;
+        opacity: 1;
+        /* 5vw will set the size to 5% of the viewport width.1vw is 0.5cm*/
+        font-weight: bold;
+        font-family: Helvetica, Times;
+        text-transform: uppercase;
+        /*automatic text treansformation*/
+        text-shadow: 5px 5px 7px lightyellow;
+        /*For Shadow Effect dist,height,blur-rad*/
+
+    }
+    </style>
+    <script type="text/javascript">
+    var name = window.prompt("Enter your Name");
+    </script>
+</head>
+
+<body>
+    <!-- For navigation bar-->
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/portfolio.html">About me</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/blogs.html">Blogs</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- For main content-->
+    <h1 id="greetings">Hello Welcome</h1>
+    <div id="footer" style="bottom:0.5%">
+        <script type="text/javascript">
+        var element = document.getElementById("greetings");
+        element.innerHTML = "Hello  " + name + "  Welcome";
+        </script>
+        <!-- For footer-->
+        <footer>
+            &copy;Axon Subedi 2019
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100003398418722">Facebook</a></li>
+                <li><a href="https://www.instagram.com/axon.subedi/">Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

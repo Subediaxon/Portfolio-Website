@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contact form</title>
+    <meta name="description" content="college portfolio website">
+    <meta name="keywords" content="college website,portfolio website">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <style type="text/css">
+    body {
+        background-color: #cccccc;
+        background-image: url("../images/writting_letter.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html">About me</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <!-- form starts here -->
+        <form name="contact_form" onsubmit="validate(); return false;">
+            <h3> Contact Form:</h3>
+            Fullname:<br>
+            <input type="text" name="fullname" placeholder="Firstname Lastname" style="width:100%;">
+            <br>
+            Email:<br>
+            <input type="text" name="Email" placeholder="support@example.com" style="width:100%">
+            <br>
+            Subject: <input type="text" name="Subject" placeholder="Title" style="width:100%;">
+            <br>
+            Description:<br>
+            <textarea name=" Description" rows="10" cols="30" placeholder="Comments/Feedbacks"></textarea>
+            <br><br>
+            <input type="submit" value="Submit Form">
+        </form>
+        <!-- form ends here -->
+    </div>
+    <script type="text/javascript">
+    function validate() {
+        var name = document.forms['contact_form']['fullname'].value;
+        var email = document.forms["contact_form"]["Email"].value;
+        var subject = document.forms["contact_form"]["Subject"].value;
+        if (name == "" || email == "" || subject == "") {
+            alert("Fill all fields");
+
+
+        } else {
+            if (email == "support@example.com") {
+                alert("Enter your email address");
+            } else {
+                alert("Thank you for your Feedbacks");
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <meta name="description" content="college portfolio website">
+    <meta name="keywords" content="college website,portfolio website">
+    <link rel="stylesheet" type="text/css" href="../style/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+
+<body>
+    <div id="navbar" style="background-color: #262228; padding-bottom:0.5em; ">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <section id="myimage">
+            <div><img id="myimg" src="../images/me5.jpg"></div>
+        </section>
+        <section id="basic">
+            <h1>HELLO <br><br> IT'S ME </h1>
+            <h1>Axon Subedi</h1>
+            <h3>Click Below to view my cv</h3>
+            <button onclick="window.location.href='../pages/cv.html'">MY CV</button>
+        </section>
+    </div>
+    <h1 id="work-intro">Here are some of my recent works</h1>
+    <div id="works">
+        <section>
+            <figure><img class="img" src="../images/developer.png" alt=""></figure>
+            <figcaption>Developer Appointment System</figcaption>
+        </section>
+        <section>
+            <figure><img class="img" src="../images/library.png" alt=""></figure>
+            <figcaption>Library Management System</figcaption>
+        </section>
+        <section>
+            <figure><img class="img" src="../images/database.png" alt=""></figure>
+            <figcaption>Database Management System</figcaption>
+        </section>
+    </div>
+    <div id="pic_container">
+        <div class="mySlides fade">
+            <img src="../images/developer.png" class="images" style=" width:50%;">
+            <div class="text">Developer Appointment System</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="../images/library.png" class="images">
+            <div class="text">Library management System </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="../images/database.png" class="images">
+            <div class="text">Database management System </div>
+        </div>
+    </div>
+    <div id="btns">
+        <button id="leftbtn" onclick="change(-1)">&lt;</button>
+        <button id="rightbtn" onclick="change(1)">&gt;</button>
+    </div>
+    <div id="footer">
+        <footer>
+            &copy;Axon Subedi 2019
+            <ul style="list-style-type: none;align-self: right; display: inline;">
+                <li style="display: inline;"><a href="https://www.facebook.com/profile.php?id=100003398418722">Facebook</a></li>
+                <li style="display: inline;"><a href="https://www.instagram.com/axon.subedi/">Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

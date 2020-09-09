@@ -1,0 +1,242 @@
+@import url("style.css");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font: 16px;
+    background-color: #dddfd4;
+    /*background-color: #E2FFCF;
+    */
+}
+
+@media only screen and(min-width:30%) {
+    body {
+        text-align: left;
+    }
+}
+
+/*========================================FOR HEADER====================================================*/
+#header {
+    width: 100%;
+
+    /*#93B37F*/
+    text-align: center;
+    margin: 30px 5px;
+    margin-bottom: 0px;
+
+    /*background-image: url("img.jpg");
+    background-size: cover;
+    position: center;*/
+    overflow: none;
+}
+
+#header figure img {
+    width: 70%;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url("me4.jpg");
+        background-size: cover;
+        position: center
+    }
+
+    #header h1 {
+        font-size: 200%;
+        margin-left: 30%;
+    }
+
+    #header figure img {
+        display: none;
+    }
+}
+
+#header header h1 {
+    font-size: 450%;
+    font-family: serif, Georgia, Verdana, "Times New Roman";
+    vertical-align: middle;
+    padding-top: 7%;
+}
+
+/*==============================Basic informations===================================*/
+.basic-info {
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    background-color: #f1f1ef;
+    margin: 2%;
+    margin-right: 0%;
+    text-align: center;
+    font-size: 150%;
+
+
+}
+
+/*=========================EDUCATION DIV==============================================*/
+.education {
+    width: 100%;
+    color: #AFF01F;
+    /*height: 600px;
+    */
+    background-color: #f1f1ef;
+    margin: 5px;
+    margin-right: 0%;
+
+    text-align: center;
+
+}
+
+.education h1 {
+    font-size: 300%;
+    vertical-align: middle;
+    padding-top: 3%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 150%;
+    text-align: center;
+}
+
+.grid-item:hover {
+    border: 4px solid red;
+    grid-template-columns: 70% auto;
+
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: orange;
+    padding-top: 3%;
+}
+
+.grid-item a:hover {
+    font-size: 200%;
+    color: green;
+
+}
+
+.grid-item a:active {
+    color: red;
+}
+
+/*=================Prajna SAdan=========================*/
+#no1:hover {
+    background-image: url("../images/prajna sadan.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    font-size: 250%;
+    line-height: 30px;
+    color: red;
+
+}
+
+/*=================Prajna SAdan=========================*/
+#no2:hover {
+    background-image: url("../images/nava arunima.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    font-size: 250%;
+    line-height: 30px;
+    color: red;
+}
+
+
+/*===============ARUNIMA COLLEGE======================================*/
+
+#no3:hover {
+    background-image: url("../images/arunima college.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    font-size: 250%;
+    line-height: 30px;
+    margin-bottom: 10%;
+    color: red;
+}
+
+/*=======================LANGUAGES===========================*/
+.languages {
+    width: 100%;
+    height: 300px;
+    background-color: #f1f1ef;
+    margin: 5px;
+    text-align: center;
+
+}
+
+/*=========================Experiences=================================*/
+.programming-languages {
+    width: 100%;
+    height: 550px;
+    font-size: 150%;
+    background-color: #f1f1ef;
+    margin: 2%;
+    text-align: center;
+}
+
+/*=======================HOBBIES===========================*/
+.hobbies {
+    width: 100%;
+    height: 40%;
+    background-color: #f1f1ef;
+    font-size: 150%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.hobbies_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5em;
+    padding: 1.5%;
+    margin-left: 1.7em;
+}
+
+.hobbies_grid>h3 {
+    background-color: #ccc;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.hobbies_grid>h3:nth-child(odd) {
+    background-color: #ddd;
+    color: orange;
+}
+
+/*=============================Additional INFO====================================*/
+.address {
+    display: flex;
+    text-align: center;
+    margin: 2% 0.5em;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+#location {
+    background-color: #ddd;
+    flex: 30%;
+    margin: 1% 5%;
+    border-radius: 10px;
+}
+
+#contact {
+    background-color: #eee;
+    flex: 30%;
+    margin: 1% 5%;
+    border-radius: 10px;
+}

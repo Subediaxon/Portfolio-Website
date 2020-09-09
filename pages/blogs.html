@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blogs</title>
+    <meta name="description" content="college blogs website">
+    <meta name="keywords" content="college website,portfolio website,blogs website">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/styleblogs.css">
+    <script type="text/javascript">
+    /*This function is called when the readmore button is clicked in articles*/
+    function readmore(val) {
+        var dots = document.getElementById("dots" + String(val));
+        var moreText = document.getElementById("more" + String(val));
+        var btnText = document.getElementById("myBtn" + String(val));
+
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!--main Header of this page-->
+    <header>
+        <div id="Header">Basic Internet Technologies And <br>The Impacts Of The Internet <br> In Daily Life.</div>
+    </header>
+    <!--End of main Header of this page-->
+    <!--NAvigation Bar Start-->
+    <div id="navbar" style="background-color: #262228;">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--NAvigation Bar ends-->
+    <!--About the author/sidebar-->
+    <div class="author">
+        <h3>About the author</h3>
+        <figure><img src="../images/me5.jpg"></figure>
+        Axon Subedi<br><br><br>
+        Student at:<br>
+        Islington College<br>
+        BSc(Hons) Computer Networking and Internet Security
+    </div>
+    <div class="author more">
+        <H3>Wanna know more about me ??</H3>
+        <h2>Click Here!!</h2>
+        <button onclick="window.location.href='cv.html'">Click Here</button>
+    </div>
+    <!--End of sidebar-->
+    <!--main contents of this page-->
+    <div id="articles_Blogs">
+        <section>
+            <article>
+                <div class="article">
+                    <h2 class="title">Learning new things</h2>
+                    <div id="contents1">
+                        <figure><img class="artimg" src="../images/christopher-gower-291246-unsplash.jpg" title="Learning things" alt="an image of learning"></figure>
+                        <figcaption>fig.learning new things </figcaption>
+                        <p> <span class="tab">Internet has been</span> one of the greatest sources of learning new things to me. Taking personally, I am a student and I always need to learn new things to keep up. With the help of Internet anyone like me can always get to learn things wherever possible without the help of anyone else. All we need is Internet connection and mobile phones /pc/laptops and anyone can go learn things they want to learn. Talking about the education nowadays, the things taught in the school/colleges cannot be sufficient .So, we need a new source for information .Books has always been there for learning new things but books cannot be accessible anywhere, can be lost or worn out ,and buying books always to keep up can cost a lot of fortune. There, comes the Internet helping the students and enthusiasts to learn. There will be open source information about the topic we are interested in. There can even be video tutorials that will speed up the process of learning.
+                            <span id="dots1">...</span><br>
+                            <span id="more1" style="display: none;"><span class="tab">In this Internet</span> obsessed world, first thing most of us do in the morning even before washing our face or leaving bed is searching the mobile and opening the social medias for the new things that happened before he/she has woken up. Since, all the news can be available in the Internet people even don’t want to listen to the radios or watch television for the news. But people should be clever enough for the authentic news as the false news can also spread very rapidly. Thus, internet can badly affect our morning routines. </span>
+                            </span>
+                        </p>
+                    </div>
+                    <button onclick="readmore(1)" id="myBtn1">Read more</button>
+                </div>
+            </article>
+            <article>
+                <div class="article">
+                    <h2 class="title">Communication</h2>
+                    <div id="contents2">
+                        <figure><img class="artimg" src="../images/iphone_notes.jpg" title="iphone_notes" alt="an image of iphone_notes"></figure>
+                        <figcaption>fig.an image of iphone_notes</figcaption>
+                        <p>
+                            <span class="tab">Internet has revolutionized</span> communicational sectors. It has connected societies and its culture. Groups on social media are the examples of social interactions. Internet has added values in people’s life and the way we introduce each other and communicate for shared life, career and business values. It has aided to remove geographical barriers between people which is gradually leading to abolishment of superstations and cultural egos.
+                            <span id="dots2">...</span><br>
+                            <span id="more2" style="display: none;"><span class="tab"> Some of the social media</span> applications are: - Facebook, Instagram, Viber, skype etc. Using them we can talk to our friends and family hundreds of miles away like they are in the next room or very close by. We don’t have to wait days for the reply of those people like couple of decades ago as real-time communication can occur. We can even have video chats all thanks to evolving technology and the Internet. Due to Internet, people can learn various new languages very easily which increases the possibility of world wide communication. People can even search for the various ways to boost their communication skills. We can even be motivated/encouraged in our work watching people in the videos. We can share our feelings, thoughts and even problems and can even get back genuine solutions to the problems and appreciations to our thoughts despite few negative comments<br>
+                                <span class="tab">But this online communication has also led to various problems. Among those lack of physical interaction is the major one. They are forgetting the ways talking around real people. So, they are real-life communications which may gradually suffer in the social life as he/she grows. Which is now a big problem.</span>
+                            </span>
+                        </p>
+                    </div>
+                    <button onclick="readmore(2)" id="myBtn2">Read more</button>
+                </div>
+            </article>
+            <article>
+                <div class="article">
+                    <h2 class="title">Entertainment</h2>
+                    <div id="contents3">
+                        <figure><img class="artimg" src="../images/entertainment-freestocks-org.jpg" title="a man enjoying netflix" alt="a man enjoying netflix"></figure>
+                        <figcaption>fig.an image of man enjoying netflix</figcaption>
+                        <p> <span class="tab">Internet has also </span> affected in the way of entertainment. We can use internet for various entertainment purposes like watching/downloading movies, listening to music, playing games etc. Due to Internet we relaxing and can enjoy our favorite shows from the place we feel comfortable.
+                            <span id="dots3">...</span>
+                            <span id="more3" style="display: none;">
+                                <br>
+                                <span class="tab">Who doesn’t love Internet when people can watch their favorite shows in their desire time? When they can play games with the peoples from different countries using online multiplayer games and make friends in the games. When they shouldn’t wait to listen to their favorite songs to play on radio or television. </span>
+                            </span>
+                        </p>
+                    </div>
+                    <button onclick="readmore(3)" id="myBtn3">Read more</button>
+                </div>
+            </article>
+            <article>
+                <div class="article">
+                    <h2 class="title">Data Storage and Security</h2>
+                    <div id="contents4">
+                        <figure><img class="artimg" src="../images/vincent-botta-736919-unsplash.jpg" title="A storage device" alt="A storage device"></figure>
+                        <figcaption>fig.a device for storing data</figcaption>
+                        <p> <span class="tab"> As the grown usage of the Internet more and more people are storing their information online. This helps to save the physical storage of the devices. That information can be retrieved any time in the present and the future with the accessibility of the internet. The passwords of many websites and other essentials are stored in the web. </span>
+                            <span id="dots4">...</span>
+                            <span id="more4" style="display: none;">
+                                <br>
+                                <span class="tab"> Privacy and Internet security of the society are the biggest concern for people very soon. There is nothing about privacy on the internet. It’s very tough even for the government of various countries to protect user’s privacy. We’re using various apps in mobile and you know that 90% of apps ask your permission or give access to use your photos, contacts and other data. You don’t have other option to install the apps on the phone if you don’t want to do that. This is the biggest challenge for the society to do mobile banking and cashless transactions. Because the data is compromised by such companies and there is no guarantee that you’re safe or not. When government websites are hacked, when big companies’ websites are hacked then what do you think your data and privacy is safe. Any apps can influence to install in the mobile and you don’t have time to think what is behind the seen. This is how privacy and security of people are comprised through the internet. It’s another biggest and most trending disadvantage of the internet.</span>
+                            </span>
+                        </p>
+                    </div>
+                    <button onclick="readmore(4)" id="myBtn4">Read more</button>
+                </div>
+            </article>
+            <article>
+                <div class="article">
+                    <h2 class="title">Online Business</h2>
+                    <div id="contents4">
+                        <figure><img class="artimg" src="../images/macbook_iphone.jpeg" title="working online" alt="a women working online"></figure>
+                        <figcaption>fig.an image of women working online</figcaption>
+                        <p> <span class="tab"> With the growing use of the Internet, the business market has also changed its form to digital market and shopping has become such an easy task. We can buy all sorts of things from the internet. All thanks to the internet we can compare prices from several Items and buy the cheapest and best items.
+                            </span>
+                            <span id="dots5">...</span>
+                            <span id="more5" style="display: none;">
+                                We can even buy vegetables and medicines from their home which will be delivered to their doorsteps. This online business can be very beneficial to the customers as well on one hand they can save their time and on the other hand it helps to cut off few hands in between the producer and consumer which results in decrease in price. The service of e-banking, mobile banking and cashless transactions is also increasing in Nepal in the last decade. We can even get a job online ,work staying at our convenient place and get paid online.
+                                <br></span>
+                            </span>
+                        </p>
+                    </div>
+                    <button onclick="readmore(5)" id="myBtn5">Read more</button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div id="footer">
+        <footer>
+            &copy;Axon Subedi 2019
+            <ul style="list-style-type: none;align-self: right; display: inline;">
+                <li style="display: inline;"><a href="https://www.facebook.com/profile.php?id=100003398418722">Facebook</a></li>
+                <li style="display: inline;"><a href="https://www.instagram.com/axon.subedi/">Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

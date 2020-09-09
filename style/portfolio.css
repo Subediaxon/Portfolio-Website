@@ -1,0 +1,173 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    color: white;
+}
+
+/*============================information==================================================*/
+#container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: 1%;
+    margin-top: 3%;
+    background-color: #737373;
+    border-radius: 2%;
+}
+
+#container>section {
+    /*margin-left: 10%;*/
+    margin-top: 5%;
+    margin-right: 5%;
+    padding: 1%;
+
+}
+
+#myimg {
+    width: 100%;
+    height: 50%;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-left: 0.5em;
+    margin-bottom: : 1em;
+
+}
+
+#basic {
+    margin-right: 5%;
+    text-align: center;
+    line-height: 60px;
+}
+
+#basic h1 {
+    font-size: 250%;
+    margin-top: 7%;
+}
+
+#basic h2 {
+    font-size: 150%;
+    margin-top: 15%;
+}
+
+#basic h3 {
+    font-size: 120%;
+}
+
+#basic button:hover {
+    width: 30%;
+}
+
+
+
+/*================================WORKS=================================================*/
+#works {
+    display: none;
+}
+
+#work-intro {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+/*============================FOR SMALLER SCREEN=========================================================*/
+
+@media only screen and (max-width: 900px) {
+
+    #pic_container,
+    #btns {
+        display: none;
+    }
+
+    #works {
+        display: block;
+        display: grid;
+        margin-left: 10%;
+        margin-top: 5%;
+        column-gap: 3em;
+        grid-row-gap: 5em;
+        text-align: center;
+        grid-template-columns: auto;
+    }
+
+    .img {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    figcaption {
+        font-size: 150%;
+        font-family: sans-serif, Arial;
+
+    }
+
+    img:hover {
+        border-radius: 5%;
+        height: 100%;
+        width: 100%;
+        transition-delay: -1s;
+    }
+}
+
+
+
+/*========================================CAROUSEL WORKS==================================================*/
+img {
+    vertical-align: middle;
+}
+
+#pic_container {
+    margin-left: 10%;
+    margin-right: auto;
+    position: relative;
+
+}
+
+.images {
+    width: 100%;
+    border: 4px solid grey;
+    border-radius: 10% 0% 10% 10%;
+    padding: 0.5%;
+    max-width: 1000px;
+    position: center;
+    vertical-align: middle;
+}
+
+/*For Fading animation in Carousel*/
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*End of fading amnimation*/
+/* Caption text */
+.text {
+    color: black;
+    font-size: 200%;
+    padding: 8px 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 0.8%;
+    right: 18%;
+    width: 100%;
+    text-align: center;
+}
+
+/*For left and right buttons*/
+#btns {
+    padding-left: 40%;
+}
+
+#btns>button:hover {
+    border: 2px solid red;
+}
